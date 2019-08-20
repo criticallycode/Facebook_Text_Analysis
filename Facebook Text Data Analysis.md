@@ -288,7 +288,9 @@ make_wordcloud(text_complete)
 
 Here's the word cloud it generated from my messages:
 
-![](Basic Word Cloud.png)Nothing super surprising here, I talk about games, movies, and YouTube with my friends a lot. Still a lot of very common words, but at least we're getting a glimpse into some interesting words/topics. Your mileage may vary on this one, and if you filter out common words of yours you may get some interesting results. Honestly, the best way to improve the results here would be to carry out a tf_idf filtering scheme and have the words scaled to their relative frequency. 
+![](basic_word_cloud.png)
+
+Nothing super surprising here, I talk about games, movies, and YouTube with my friends a lot. Still a lot of very common words, but at least we're getting a glimpse into some interesting words/topics. Your mileage may vary on this one, and if you filter out common words of yours you may get some interesting results. Honestly, the best way to improve the results here would be to carry out a tf_idf filtering scheme and have the words scaled to their relative frequency. 
 
 Speaking of topics, is there anyway we can analyze text for topics directly? It turns out there is. 
 
@@ -375,11 +377,11 @@ plot_categories("Products", prod_df, 30)
 
 Here's what comes up when plotting Named Entities. I talk about a lot of video game characters, haha. I also mention Obama in there though.
 
-![](Named Entities.png)
+![](named_entities.png)
 
 Here's the results of the Works of Art plot. At a glance, many of these are indeed works of art.
 
-![](Works of Art.png)
+![](works_of_art.png)
 
 Here's the Organizations plot.
 
