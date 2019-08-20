@@ -155,7 +155,7 @@ word_count_viz(words)
 
 Initially, when I plot the count of words, I get this: 
 
-![](C:\jupyter_notebooks\FB_data\word_count_1.png)
+![](word_count_1.png)
 
 It looks like that even after filtering for common words/stop words the top 25 words still don't contain a lot of useful data. We aren't very likely to get much information on the kinds of topics I'm likely to talk about (although anecdotally, I can say I definitely say "yeah" a lot, so that's accurately reflected here). 
 
@@ -163,11 +163,11 @@ It looks like that even after filtering for common words/stop words the top 25 w
 
 Suppose I try ignoring the top 30 words or so and see what that returns. 
 
-![](C:\jupyter_notebooks\FB_data\word_count_2.png)
+![](word_count_2.png)
 
 After ignoring the top 30 words we're getting a little closer to meaningful word representation. "Games", "play", and "work" are all topics I'm likely to talk about with friends.  Incidentally, here's what happened when I visualized words 300 to 330. Apparently I talk about "dinner" almost as much as I talk about "batman".
 
-![](C:\jupyter_notebooks\FB_data\word_count_3.png)
+![](word_count_3.png)
 
 Is there a better way to see what kind of topics you talk about? Yes, but we'll get back to that. For now, let's do some sentiment analysis. Sentiment analysis captures the "sentiment" or "tone" of the text, like "positive" or "negative".  I'm curious to see if my posts are positive or negative in general.
 
@@ -288,7 +288,7 @@ make_wordcloud(text_complete)
 
 Here's the word cloud it generated from my messages:
 
-![](C:\jupyter_notebooks\FB_data\Basic Word Cloud.png)Nothing super surprising here, I talk about games, movies, and YouTube with my friends a lot. Still a lot of very common words, but at least we're getting a glimpse into some interesting words/topics. Your mileage may vary on this one, and if you filter out common words of yours you may get some interesting results. Honestly, the best way to improve the results here would be to carry out a tf_idf filtering scheme and have the words scaled to their relative frequency. 
+![](Basic Word Cloud.png)Nothing super surprising here, I talk about games, movies, and YouTube with my friends a lot. Still a lot of very common words, but at least we're getting a glimpse into some interesting words/topics. Your mileage may vary on this one, and if you filter out common words of yours you may get some interesting results. Honestly, the best way to improve the results here would be to carry out a tf_idf filtering scheme and have the words scaled to their relative frequency. 
 
 Speaking of topics, is there anyway we can analyze text for topics directly? It turns out there is. 
 
@@ -375,19 +375,19 @@ plot_categories("Products", prod_df, 30)
 
 Here's what comes up when plotting Named Entities. I talk about a lot of video game characters, haha. I also mention Obama in there though.
 
-![](C:\jupyter_notebooks\FB_data\Named Entities.png)
+![](Named Entities.png)
 
 Here's the results of the Works of Art plot. At a glance, many of these are indeed works of art.
 
-![](C:\jupyter_notebooks\FB_data\Works of Art.png)
+![](Works of Art.png)
 
 Here's the Organizations plot.
 
-![](C:\jupyter_notebooks\FB_data\Organizations.png)
+![](Organizations.png)
 
 Here's GPEs plot. I find it funny it has classified "Python" as a place.
 
-![](C:\jupyter_notebooks\FB_data\GPEs.png)
+![](GPEs.png)
 
 
 
